@@ -1,0 +1,31 @@
+// Exercise 1
+
+function countCharacterInstances(arr, char) {
+  return arr.map((str) => str.split(char).length - 1);
+}
+
+// Example
+const strings = ["hello", "world", "foo", "bar"];
+const character = "o";
+const result = countCharacterInstances(strings, character);
+console.log(result); // Output: [1, 1, 2, 0]
+
+For each string, it splits the string into an array of substrings using the given character (char) as the separator. The length of the resulting array minus 1 gives the number of instances of the character in the original string.
+
+// Exercise 2
+
+function multiplyAndFilterBy3(arr) {
+  return arr.map((num) => num * num + 2).filter((num) => num % 3 === 0);
+}
+
+// Example
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const result = multiplyAndFilterBy3(numbers);
+console.log(result); // Output: [3, 12, 33, 72]
+
+Create a new array where each number is multiplied by itself and then 2 is added. Then, it uses the filter method to only keep the numbers that are divisible by 3.
+
+
+
+
+
